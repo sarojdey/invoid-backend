@@ -2,7 +2,7 @@ name: Keep Render Awake
 on:
   workflow_dispatch:      # <--- This adds the "Run workflow" button
   schedule:
-    - cron: '*/10 3-17 * * *'
+    - cron: '*/7 3-17 * * *'
 
 jobs:
   ping:
