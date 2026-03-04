@@ -12,7 +12,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/api/health",methods=["GET", "HEAD"])
+@app.get("/api/health")
 async def health_check():
     return {"status": "healthy", "uptime": "nominal"}
 
