@@ -1,7 +1,7 @@
 name: Keep Render Awake
 on:
+  workflow_dispatch:      # <--- This adds the "Run workflow" button
   schedule:
-    # Runs every 10 mins from 03:30 to 17:30 UTC (9:00 AM to 11:00 PM IST)
     - cron: '*/10 3-17 * * *'
 
 jobs:
